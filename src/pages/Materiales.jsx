@@ -29,7 +29,7 @@ const Materiales = () => {
         <SwiperSlide className='flex flex-col items-center  mx-auto justify-center w-full h-full' key={index}>
           <div className='opacity-90 md:rounded-md flex flex-col gap-10'>
             <img
-              className='mx-auto h-[500px] w-[500px] bg-gray-800 rounded-xl object-contain'
+              className='mx-auto h-[500px] w-[500px] rounded-xl object-contain'
               src={item.img}
               loading="lazy"
               alt={`Slide ${index + 1}`}
