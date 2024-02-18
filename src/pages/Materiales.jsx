@@ -13,7 +13,7 @@ const Materiales = () => {
   return (
     <>
     <blockquote id='Materiales' className='flex justify-center items-center '>
-        <p class="text-2xl italic font-medium text-gray-900 dark:text-white pb-10">Nuestros materiales</p>
+        <p className="text-2xl italic font-medium text-gray-900 dark:text-white pb-10">Nuestros materiales</p>
     </blockquote>
       <Swiper 
         modules={[Navigation, Autoplay]}

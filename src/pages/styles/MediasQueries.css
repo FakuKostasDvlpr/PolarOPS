@@ -10,7 +10,6 @@ html {
 }
 
 :root {
-  /* bg colors */
   --background: #02050e;
   --primary: #1e50ff;
   --secondary: #272d37;
@@ -19,12 +18,8 @@ html {
   --bg-white: #fff;
   --bg-electric: #f0fbff;
   --nav-bg: #0f1525;
-
-  /* Text colors */
   --text-gray: #adb9c7;
   --text-white: #f3f4f6;
-
-  /* Decoration */
   --fire: #ff6d00;
   --electric: #64d3ff;
 }
