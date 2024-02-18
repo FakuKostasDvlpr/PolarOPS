@@ -5,14 +5,19 @@ interface Props {
 
 const { title } = Astro.props;
 ---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/logo.png"/>
-		<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+		<link rel="icon" type="image/svg+xml" href="/logo.png" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+			rel="stylesheet"
+			crossorigin="anonymous"
+		/>
 		<meta name="generator" content={Astro.generator} />
 		<title>P&S</title>
 	</head>
@@ -36,27 +41,26 @@ const { title } = Astro.props;
 		font-family: system-ui, sans-serif;
 		background: #13151a;
 		background-size: 224px;
-		scroll-behavior: smooth;
 		
 	}
 	.scroll-container {
-            height: 200px; 
-            overflow-y: scroll; 
-            border: 1px solid #ccc; 
-        }
+		height: 200px;
+		overflow-y: scroll;
+		border: 1px solid #ccc;
+	}
+	::-webkit-scrollbar {
+		width: 5px;
+		background-color: transparent;
+	}
 
-        
-        ::-webkit-scrollbar {
-        }
+	::-webkit-scrollbar-thumb {
+		background-color: #364ee7;
+		border-radius: 6px;
+	}
 
-        ::-webkit-scrollbar-thumb {
-            background-color: #364ee7; 
-            border-radius: 6px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background-color: transparent; 
-        }
+	::-webkit-scrollbar-track {
+		background-color: transparent;
+	}
 	code {
 		font-family:
 			Menlo,
