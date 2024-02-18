@@ -1,0 +1,88 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "category": "Traslucido",
+            "color": "Azul",
+            "img": "/public/translucidos-blue-removebg-preview.png"
+        },
+        {
+            "id": 2,
+            "category": "Traslucido",
+            "color": "Naranja",
+            "img": "/public/traslucido-naranja.png"
+        },
+        {
+            "id": 3,
+            "category": "Traslucido",
+            "color": "Verde",
+            "img": "/public/traslucido-verde.png"
+        },
+        {
+            "id": 4,
+            "category": "Traslucido",
+            "color": "Violeta",
+            "img": "/public/traslucido-violeta.png"
+        },
+        {
+            "id": 5,
+            "category": "Espejado Invertido",
+            "color": "Bronce",
+            "img": "/public/espejado-invertido-bronce.png"
+        },
+        {
+            "id": 6,
+            "category": "Espejado",
+            "color": "Naranja",
+            "img": "/public/espejado-naranja.png"
+        },
+        {
+            "id": 8,
+            "category": "Espejado",
+            "color": "Oro",
+            "img": "/public/espejado-oro.png"
+        },
+        {
+            "id": 10,
+            "category": "Espejado",
+            "color": "Rojo",
+            "img": "/public/espejado-rojo.png"
+        },
+        {
+            "id": 11,
+            "category": "Espejado",
+            "color": "Rosa",
+            "img": "/public/espejado-rosa.png"
+        },
+        {
+            "id": 12,
+            "category": "Espejado",
+            "color": "Verde",
+            "img": "/public/espejado-verde.png"
+        },
+        {
+            "id": 13,
+            "category": "Reflex",
+            "color": "Azul",
+            "img": "/public/blue-reflex.png"
+        },
+        {
+            "id": 15,
+            "category": "Reflex",
+            "color": "18%",
+            "img": "/public/reflex.png"
+        },
+        {
+            "id": 16,
+            "category": "Neutral",
+            "color": "Neutral 05%",
+            "img": "/public/neutral-05-premium.png"
+        },
+        {
+            "id": 21,
+            "category": "Neutral",
+            "color": "Gris 05%",
+            "img": "/public/r-gray05.png"
+        }
+    ]
+}

@@ -1,0 +1,83 @@
+---
+import ReactPrueba from "./ReactPrueba"
+import NavbaR from "./Navbar"
+---
+<script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"/>
+
+<script type="module">
+  // Función para toggle (mostrar/ocultar) el menú
+  function toggleMenu() {
+    const navbarDropdown = document.getElementById('navbar-dropdown');
+    if (navbarDropdown.classList.contains('hidden')) {
+      navbarDropdown.classList.remove('hidden');
+      navbarDropdown.classList.add('block');
+    } else {
+      navbarDropdown.classList.remove('block');
+      navbarDropdown.classList.add('hidden');
+    }
+  }
+
+  // Asociar la función al botón de hamburguesa
+  const menuButton = document.querySelector('[data-collapse-toggle="navbar-dropdown"]');
+  menuButton.addEventListener('click', toggleMenu);
+
+  // Asociar la función a los enlaces
+  document.querySelectorAll('#navbar-dropdown a').forEach((link) => {
+    link.addEventListener('click', () => {
+      toggleMenu();
+      closeMenu(); // Asegurar que el menú se cierre después de hacer clic en un enlace
+    });
+  });
+
+  // Función para cerrar el menú
+  function closeMenu() {
+    const navbarDropdown = document.getElementById('navbar-dropdown');
+    navbarDropdown.classList.remove('block');
+    navbarDropdown.classList.add('hidden');
+  }
+
+  function togglePolarizadosDropdown() {
+    const polarizadosDropdown = document.getElementById('dropdownNavbar');
+    if (polarizadosDropdown.classList.contains('hidden')) {
+      polarizadosDropdown.classList.remove('hidden');
+      polarizadosDropdown.classList.add('block');
+    } else {
+      polarizadosDropdown.classList.remove('block');
+      polarizadosDropdown.classList.add('hidden');
+    }
+  }
+
+  // Asociar la función al botón de polarizados
+  const polarizadosButton = document.getElementById('dropdownNavbarLink');
+  polarizadosButton.addEventListener('click', togglePolarizadosDropdown);
+
+  // Asociar la función a los enlaces del dropdown de polarizados
+  document.querySelectorAll('#dropdownNavbar a').forEach((link) => {
+    link.addEventListener('click', () => {
+      togglePolarizadosDropdown();
+      // Puedes agregar lógica adicional si es necesario después de hacer clic en un enlace de polarizados
+    });
+  });
+</script>
+
+<nav class="bg-white border-gray-200 dark:bg-gray-900 border-none sm:fixed top-0 w-full z-20">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-2.5">
+        <a href="#" class="flex items-center text-white text-2xl gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home-shield" width="34" height="34" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 21v-6a2 2 0 0 1 2 -2h1.341" /><path d="M19.682 10.682l-7.682 -7.682l-9 9h2v7a2 2 0 0 0 2 2h5" /><path d="M22 16c0 4 -2.5 6 -3.5 6s-3.5 -2 -3.5 -6c1 0 2.5 -.5 3.5 -1.5c1 1 2.5 1.5 3.5 1.5z" /></svg>
+            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-cyan-300">Polarizados</span>
+            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">|Polarsystem</span>
+        </a>
+      <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ms-3 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+          <NavbaR>
+              <ReactPrueba/>
+            </NavbaR>
+      </div>
+    </div>
+</nav>
+
