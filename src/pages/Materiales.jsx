@@ -3,13 +3,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
 import data from '../pages/data/data.json';
 
 const Materiales = () => {
-
   const images = data.data;
-
   return (
     <>
     <blockquote id='Materiales' className='flex justify-center items-center '>
@@ -51,7 +48,6 @@ const Materiales = () => {
         </SwiperSlide>
 ))}
 </Swiper>
-
     </>
   );
 };

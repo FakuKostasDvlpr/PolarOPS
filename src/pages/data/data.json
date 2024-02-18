@@ -69,19 +69,19 @@
         {
             "id": 15,
             "category": "Reflex",
-            "color": "18%",
+            "color": "18",
             "img": "/reflex.png"
         },
         {
             "id": 16,
             "category": "Neutral",
-            "color": "Neutral 05%",
+            "color": "Neutral 05",
             "img": "/neutral-05-premium.png"
         },
         {
             "id": 21,
             "category": "Neutral",
-            "color": "Gris 05%",
+            "color": "Gris 05",
             "img": "/r-gray05.png"
         }
     ]

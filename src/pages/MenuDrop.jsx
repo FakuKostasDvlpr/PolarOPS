@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ReactPrueba = () => {
+const MenuDrop = () => {
   return (
     <>
     <div id="dropdownNavbar" class="rounded-md z-10 hidden flex-col font-normal shadow w-full bg-gray-700">
@@ -17,4 +17,4 @@ const ReactPrueba = () => {
   )
 }
 
-export default ReactPrueba
+export default MenuDrop

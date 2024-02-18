@@ -1,5 +1,5 @@
 import React, {useState,useEffect} from 'react';
-import ReactPrueba from './ReactPrueba.jsx';
+import MenuDrop from './MenuDrop.jsx';
 import "./styles/MediasQueries.css"
 
 
@@ -38,7 +38,7 @@ const Navbar = () => {
                   <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full  text-gray-700 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700  md:dark:hover:bg-transparent">Polarizados <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
               </svg></button>
-                <ReactPrueba/>
+                <MenuDrop/>
             </li>
         </ul>
         </>
