@@ -22,9 +22,9 @@ const Navbar = () => {
             <li class="flex">
                 <a href="#" class="block text-white bg-primary-700 lg:bg-transparent lg:text-primary-700 " aria-current="page">Home</a>
             </li>
-            <li>
+            {/* <li>
                 <a href="#nosotros" class="block p- text-gray-700 border-b border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white  dark:hover:text-white lg:dark:hover:bg-transparent border-none">Nosotros</a>
-            </li>
+            </li> */}
             <li>
                 <a href="#servicios" class="block p- text-gray-700 border-b border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white  dark:hover:text-white lg:dark:hover:bg-transparent border-none">Servicios</a>
             </li>
